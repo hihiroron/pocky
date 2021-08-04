@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/mvc
+    http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<!-- Controllerパッケージの設定 -->
+	<context:component-scan base-package="com.cloud.toppo.web.controller" />
+
+	<!-- springMVCアノテーション利用設定 -->
+	<mvc:annotation-driven validator="globalValidator"/>
+
+	<!-- static resourceの設定 -->
+	<mvc:resources mapping="/resources/**" location="resources/" />
+
+	<!-- viewの設定 -->
+	<mvc:view-resolvers>
+		<mvc:jsp prefix="/WEB-INF/views/" suffix=".jsp" />
+	</mvc:view-resolvers>
+
+	<!-- handlerMapping(Exception) -->
+	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver" id="exceptionHnadler">
+	  <property name="exceptionMappings">
+	    <map>
+<!-- 	      <entry key="exception.LoginRequiredException" value="dummyLogin"></entry> -->
+	      <entry key="exception.CartEmptyException" value="cartEmpty"></entry>
+	      <entry key="java.lang.Exception" value="exception"></entry>
+	      <entry key="org.springframework.dao.DataRetrievalFailureException" value="dataNotFound"></entry>
+	    </map>
+	  </property>
+	</bean>
+
+</beans>
