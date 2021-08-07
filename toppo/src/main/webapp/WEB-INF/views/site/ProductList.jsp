@@ -22,13 +22,6 @@
 				<th align="center" width="320">商品名</th>
 				<th align="center" width="100">価格</th>
 			</tr>
-			<c:forEach items="${proList}" var="item">
-				<tr class="record">
-					<td align="center">${item.productId}</td>
-					<td align="left"><a href="/ShoppingSite/ProductD?productId=${item.productId}">${item.productName}</a></td>
-					<td align="right">${item.price}円</td>
-				</tr>
-			</c:forEach>
 		</table>
 		</div>
 		</form:form>
