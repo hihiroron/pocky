@@ -2,11 +2,11 @@ package com.cloud.toppo.Buisiness.Service;
 
 import java.time.LocalDate;
 
-import jp.co.sysevo.shopping.Buisiness.Domain.UserModel;
+import com.cloud.toppo.Buisiness.Domain.UserModel;
 
 public interface UserService {
 	
-	//登録処理
+	//登録処理こんにちは
 	public UserModel insertUser(UserModel userModel);
 	
 	//検索処理
