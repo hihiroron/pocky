@@ -39,19 +39,19 @@
 
 	</http>
 	
-	<beans:bean id="extensionService" class="jp.co.sysevo.shopping.Buisiness.Dao.ExtensionJdbcDaoImpl">
+	<beans:bean id="extensionService" class="com.cloud.toppo.Buisiness.Dao.ExtensionJdbcDaoImpl">
 		<beans:property name="dataSource" ref="dataSource" />
 		<beans:property name="usersByUsernameQuery">
 			<beans:value>
 				SELECT USER_ID, PASSWORD, NAME
-				  FROM shopping.user
+				  FROM toppo.USER
 				 WHERE USER_ID=?
 			</beans:value>
 		</beans:property>
 		<beans:property name="authoritiesByUsernameQuery">
 			<beans:value>
 				SELECT USER_ID, NAME 
-				  FROM shopping.user
+				  FROM toppo.USER
 				 WHERE USER_ID=?
 			</beans:value>
 		</beans:property>
