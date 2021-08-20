@@ -12,8 +12,8 @@ import org.springframework.web.bind.support.SessionStatus;
 
 @Controller
 //@RequestMapping(path = "/")
-@SessionAttributes("product")
-public class ProductListController {
+@SessionAttributes("introduction")
+public class IntroductionController {
 
 	
 
@@ -35,16 +35,16 @@ public class ProductListController {
 		sessionStatus.setComplete();
 
 		// showSearchFormメソッドにリダイレクト
-		return "redirect:ProductList";
+		return "redirect:Introduction";
 	}
 
-	// "/ProductList"にGETリクエストを送信した際に実行されるメソッド
+	// "/Introduction"にGETリクエストを送信した際に実行されるメソッド
 	// 商品一覧画面を表示する（ProductList.jspの呼び出し）
 	@RequestMapping(path = "/ProductList")
 	public String showSearchForm() {
 
 		
 
-		return "site/ProductList";
+		return "site/Introduction";
 	}
 }
