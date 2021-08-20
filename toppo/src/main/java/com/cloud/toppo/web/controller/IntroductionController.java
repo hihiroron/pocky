@@ -39,7 +39,7 @@ public class IntroductionController {
 	}
 
 	// "/Introduction"にGETリクエストを送信した際に実行されるメソッド
-	// 商品一覧画面を表示する（ProductList.jspの呼び出し）
+	// 商品一覧画面を表示する（Introduction.jspの呼び出し）
 	@RequestMapping(path = "/ProductList")
 	public String showSearchForm() {
 
