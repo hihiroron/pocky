@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<title>ユーザー登録画面</title>
+<title>アカウントを作成</title>
 </head>
 <body>
 	<%@ include file="/WEB-INF/views/common/cart_header.jsp"%>
@@ -13,7 +13,7 @@
 		<!-- セッションスコープの取得 -->
 		<%-- 		<form:form modelAttribute="userform" action="/ShoppingSite/userEntry" method="post"> --%>
 		<form:form modelAttribute="userform">
-			<h2>ユーザー登録画面</h2>
+			<h2>アカウントを作成</h2>
 			<spring:bind path="userform.*">
 				<c:if test="${status.errors.hasErrors()}">
 					<div class="ErrorMessage">
