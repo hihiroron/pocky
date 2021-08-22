@@ -21,7 +21,7 @@
 			username-parameter="USER_ID" password-parameter="password" />
 
 		<!-- 認可URL設定 -->
-		<intercept-url pattern="/Pay" access="isAuthenticated()" />
+		<!-- <intercept-url pattern="/Pay" access="isAuthenticated()" /> -->
 
 		<!-- ログアウト設定 -->
 		<logout logout-url="/Logout" logout-success-url="/Login"

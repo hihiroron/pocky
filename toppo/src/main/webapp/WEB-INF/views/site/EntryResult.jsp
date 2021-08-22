@@ -5,13 +5,13 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<title>ユーザー登録完了画面</title>
+<title>アカウントの登録が完了</title>
 </head>
 <body>
 	<!-- </div> -->
 	<div align="center" class="body">
 
-		<h2>ユーザー登録完了画面</h2>
+		<h2>アカウント登録が完了</h2>
 		<div class="InformationMessage">
 			<p>登録完了しました。</p>
 		</div>
