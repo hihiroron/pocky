@@ -35,16 +35,16 @@ public class IntroductionController {
 		sessionStatus.setComplete();
 
 		// showSearchFormメソッドにリダイレクト
-		return "redirect:Introduction";
+		return "redirect:Introduce";
 	}
 
 	// "/Introduction"にGETリクエストを送信した際に実行されるメソッド
-	// 商品一覧画面を表示する（ProductList.jspの呼び出し）
-	@RequestMapping(path = "/ProductList")
+	// 商品一覧画面を表示する（Introduction.jspの呼び出し）
+	@RequestMapping(path = "/Introduce")
 	public String showSearchForm() {
 
 		
 
-		return "site/Introduction";
+		return "site/Introduce";
 	}
 }

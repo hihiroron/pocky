@@ -5,13 +5,13 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<title>ユーザー登録確認画面</title>
+<title>登録内容を確認</title>
 </head>
 <body>
 	<%@ include file="/WEB-INF/views/common/cart_header.jsp"%>
 	<!-- </div> -->
 	<div align="center" class="body">
-		<h2>ユーザー登録確認画面</h2>
+		<h2>登録内容を確認</h2>
 		<form method="post">
 			<div class="ContentBox ContentArea RecordStyle">
 				<table>

@@ -1,72 +1,48 @@
 package com.cloud.toppo.Buisiness.Domain;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Email;
-import org.springframework.format.annotation.DateTimeFormat;
 
 public class UserModel implements Serializable{
 	
-	private int salesId;
+	
 	
 	@NotNull
 	@Size(max = 50, min = 1)
 	@Pattern(regexp = "^[a-zA-Z0-9]*")
-	private String userId;
+	private String userId; //ユーザーID
+	private String frontBackId; //表裏ID
+	@NotNull
+	@Size(max = 50, min = 1)
+	private String userName; //ユーザー名
 	@NotNull
 	@Size(max = 50, min = 8)
 	@Pattern(regexp = "^[a-zA-Z0-9]*")
-	private String password;
-	private int jobId;
-	@NotNull
-	@Size(max = 50, min = 1)
-	private String userName;
-	@NotNull
-	@Pattern(regexp="^[0-9]{3}-[0-9]{4}$")
-	@Size(max = 8, min = 1)
-	private String postCode;
-	@NotNull
-	@Size(max = 50, min = 1)
-	private String address;
+	private String password; //パスワード
 	@NotNull
 	@Email
 	@Size(max = 50, min = 1)
-	private String mail;
-	@NotNull
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private LocalDate birth;
+	private String mail; //メールアドレス
+	private String introduce; //自己紹介文
+	private String image; //画像
 	
 	
-	
-	public int getSalesId() {
-		return salesId;
-	}
-	public void setSalesId(int salesId) {
-		this.salesId = salesId;
-	}
 	public String getUserId() {
 		return userId;
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	
-	public String getPassword() {
-		return password;
+	public String getFrontBackId() {
+		return frontBackId;
 	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	public int getJobId() {
-		return jobId;
-	}
-	public void setJobId(int jobId) {
-		this.jobId = jobId;
+	public void setFrontBackId(String frontBackId) {
+		this.frontBackId = frontBackId;
 	}
 	public String getUserName() {
 		return userName;
@@ -74,17 +50,11 @@ public class UserModel implements Serializable{
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-	public String getPostCode() {
-		return postCode;
+	public String getPassword() {
+		return password;
 	}
-	public void setPostCode(String postCode) {
-		this.postCode = postCode;
-	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	public String getMail() {
 		return mail;
@@ -92,13 +62,26 @@ public class UserModel implements Serializable{
 	public void setMail(String mail) {
 		this.mail = mail;
 	}
-	public LocalDate getBirth() {
-		return birth;
+	public String getIntroduce() {
+		return introduce;
 	}
-	public void setBirth(LocalDate birth) {
-		this.birth = birth;
+	public void setIntroduce(String introduce) {
+		this.introduce = introduce;
+	}
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
 	}
 	
 	
+	
+	
+	
+	
+	
+	
+
 
 }

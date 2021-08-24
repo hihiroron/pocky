@@ -9,7 +9,7 @@
 		<c:when test="${a}">
 
 			<p class="login">
-				<a href="/ShoppingSite/Logout">ログアウト</a>
+				<a href="/toppo/Logout">ログアウト</a>
 			</p>
 			<div class="aaa">
 				ようこそ
@@ -19,20 +19,20 @@
 		</c:when>
 	<c:otherwise>
 		<p class="login">
-			<a href="/ShoppingSite/Login">ログイン</a>
+			<a href="/toppo/Login">ログイン</a>
 		</p>
 		<p class="login">
-			<a href="/ShoppingSite/Entry/add">新規ユーザ登録</a>
+			<a href="/toppo/Entry/add">新規ユーザ登録</a>
 		</p>
 	</c:otherwise>
 	</c:choose>
 	<div class="clear-element"></div>
 	<div class="menu">
 		<ul class="nav">
-			<li><a href="/ShoppingSite/ProductList">商品リスト</a></li>
-			<li><a href="/ShoppingSite/Pay">精算画面</a></li>
-			<li><a href="/ShoppingSite/ProductCart">カートを確認</a></li>
-			<li><a href="/ShoppingSite/reset">カートのクリア</a></li>
+			<li><a href="/toppo/ProductList">商品リスト</a></li>
+			<li><a href="/toppo/Pay">精算画面</a></li>
+			<li><a href="/toppo/ProductCart">カートを確認</a></li>
+			<li><a href="/toppo/reset">カートのクリア</a></li>
 		</ul>
 	</div>
 </div>

@@ -8,19 +8,21 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<title>商品一覧画面</title>
+<title>Doubbitへようこそ。</title>
 </head>
 <body>
-	<%@ include file="/WEB-INF/views/common/cart_header.jsp"%>
+
+    <%@ include file="/WEB-INF/views/common/cart_header.jsp"%>
+
 	<div align="center" class="body">
-		<h2>商品一覧画面</h2>
+		<h2>Doubbitへようこそ。</h2>
 		<form:form modelAttribute="product">
 		<div class="list-table">
 		<table border="1">
 			<tr class="header">
-				<th align="center" width="80">商品ID</th>
-				<th align="center" width="320">商品名</th>
-				<th align="center" width="100">価格</th>
+				<th align="center" width="200">新しい</th>
+				<th align="center" width="200">体験を</th>
+				<th align="center" width="200">始めよう</th>
 			</tr>
 		</table>
 		</div>
