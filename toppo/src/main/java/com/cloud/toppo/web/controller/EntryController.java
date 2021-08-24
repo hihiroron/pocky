@@ -2,6 +2,7 @@ package com.cloud.toppo.web.controller;
 
 import javax.validation.Valid;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,12 +16,16 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
 import com.cloud.toppo.Buisiness.Domain.UserModel;
+import com.cloud.toppo.Buisiness.Service.UserService;
 
 @Controller
 //@RequestMapping(path = "/")
 @SessionAttributes("entry")
 public class EntryController {
 
+	@Autowired
+	UserService userService;
+	
 	// リクエストが来たときに、各入力値が空の時に
 	// 空文字ではなく、nullを設定
 	@InitBinder
@@ -77,6 +82,12 @@ public class EntryController {
 	//登録完了画面の表示
 	@RequestMapping(path = "/Entry", method = RequestMethod.GET)
 	public String showEntryComplete(@ModelAttribute("entry") UserModel form, Model model,SessionStatus sessionStatus) {
+		
+		//データベースへの登録処理を行う」
+		userService.inserttUser(form);
+		
+		//セッション内の登録用オブジェクトを破棄
+		sessionStatus.setComplete();
 		
 		//EntryResult.jspにフォワード
 		return "site/EntryResult";

@@ -16,7 +16,7 @@ public class UserModel implements Serializable{
 	@Size(max = 50, min = 1)
 	@Pattern(regexp = "^[a-zA-Z0-9]*")
 	private String userId; //ユーザーID
-	private String omoteUra; //表裏ID
+	private String frontBackId; //表裏ID
 	@NotNull
 	@Size(max = 50, min = 1)
 	private String userName; //ユーザー名
@@ -38,11 +38,11 @@ public class UserModel implements Serializable{
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getOmoteUra() {
-		return omoteUra;
+	public String getFrontBackId() {
+		return frontBackId;
 	}
-	public void setOmoteUra(String omoteUra) {
-		this.omoteUra = omoteUra;
+	public void setFrontBackId(String frontBackId) {
+		this.frontBackId = frontBackId;
 	}
 	public String getUserName() {
 		return userName;
