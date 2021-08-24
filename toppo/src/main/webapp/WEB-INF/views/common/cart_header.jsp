@@ -4,8 +4,8 @@
 
 
 <div class="sigt-content">
-	<sec:authorize var="a" access="isAuthenticated()" />
-	<c:choose>
+	<!-- <sec:authorize var="a" access="isAuthenticated()" /> -->
+	<%-- <c:choose>
 		<c:when test="${a}">
 
 			<p class="login">
@@ -25,7 +25,13 @@
 			<a href="/toppo/Entry/add">新規ユーザ登録</a>
 		</p>
 	</c:otherwise>
-	</c:choose>
+	</c:choose> --%>
+	<p class="login">
+		<a href="/toppo/Login">ログイン</a>
+	</p>
+	<p class="login">
+		<a href="/toppo/Entry/add">新規ユーザ登録</a>
+	</p>
 	<div class="clear-element"></div>
 	<div class="menu">
 		<ul class="nav">
