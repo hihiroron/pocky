@@ -58,7 +58,7 @@
 	rel="stylesheet">
 
 <link type="text/css"
-	href="/ShoppingSite/resources/css/angular-motion.min.css"
+	href="/toppo/resources/css/angular-motion.min.css"
 	rel="stylesheet">
 	
 
