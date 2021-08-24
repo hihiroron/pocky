@@ -54,7 +54,7 @@ public class EntryController {
 	}
 	
 	//ユーザー登録画面で「登録」が押下された時の処理
-	@RequestMapping(path = "/Entry", method = RequestMethod.POST, params = "")
+	@RequestMapping(path = "/Entry", method = RequestMethod.POST, params = "regist")
 	public String verify(@ModelAttribute("entry") @Valid UserModel form, Errors errors, Model model) {
 		//エラーあった時の処理とか
 		return "site/Entry";
@@ -69,7 +69,7 @@ public class EntryController {
 	}
 	
 	//登録確認画面で「確定」が押下された時の処理
-	@RequestMapping(path = "/Entry", method = RequestMethod.POST, params = "")
+	@RequestMapping(path = "/Entry", method = RequestMethod.POST, params = "ok")
 	public String edit() {
 		return "redirect:EntryResult";
 	}
