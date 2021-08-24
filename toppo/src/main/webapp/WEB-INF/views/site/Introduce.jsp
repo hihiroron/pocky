@@ -8,14 +8,14 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<title>Doubitへようこそ。</title>
+<title>Doubbitへようこそ。</title>
 </head>
 <body>
 
     <%@ include file="/WEB-INF/views/common/cart_header.jsp"%>
 
 	<div align="center" class="body">
-		<h2>Doubitへようこそ。</h2>
+		<h2>Doubbitへようこそ。</h2>
 		<form:form modelAttribute="product">
 		<div class="list-table">
 		<table border="1">
