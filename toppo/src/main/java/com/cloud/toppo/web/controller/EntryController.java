@@ -19,7 +19,7 @@ import com.cloud.toppo.Buisiness.Domain.UserModel;
 import com.cloud.toppo.Buisiness.Service.UserService;
 
 @Controller
-//@RequestMapping(path = "/")
+@RequestMapping(path = "/Entry")
 @SessionAttributes("entry")
 public class EntryController {
 
