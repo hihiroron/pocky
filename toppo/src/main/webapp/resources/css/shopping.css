@@ -21,7 +21,6 @@ div.body{
 .body h2{
 	font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 28px;
-
 }
 
 .body table {
@@ -212,8 +211,8 @@ td {
 
 div.cart{
 	/* border:1px solid gray; */
-	width=320px;
-	height=58px;
+	width:320px;
+	height:58px;
 }
 
 tr.header{
@@ -276,7 +275,7 @@ input.birthday{
 select.jobs{
 	width: 100px;
 }
-
+/* 
 .modal-backdrop.am-fade {
   opacity: .5;
   transition: opacity .15s linear;
@@ -291,7 +290,7 @@ select.jobs{
     &.ng-leave-active {
       opacity: 0;
     }
- }
+ } */
 
 
 /*---------------アニメーション-------------------*/
@@ -320,4 +319,4 @@ select.jobs{
 
 
 
-}
+

@@ -8,11 +8,11 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<title>〜へようこそ。</title>
+<title>へようこそ。</title>
 </head>
 <body>
 
-<%@ include file="/WEB-INF/views/common/jsp_header.jsp"%>
+    <%@ include file="/WEB-INF/views/common/cart_header.jsp"%>
 
 	<div align="center" class="body">
 		<h2>〜へようこそ。</h2>
