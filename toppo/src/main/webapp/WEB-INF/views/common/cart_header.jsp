@@ -33,12 +33,12 @@
 		<a href="/toppo/Entry/add">新規ユーザ登録</a>
 	</p>
 	<div class="clear-element"></div>
-	<div class="menu">
+	<!-- <div class="menu">
 		<ul class="nav">
 			<li><a href="/toppo/ProductList">商品リスト</a></li>
 			<li><a href="/toppo/Pay">精算画面</a></li>
 			<li><a href="/toppo/ProductCart">カートを確認</a></li>
 			<li><a href="/toppo/reset">カートのクリア</a></li>
 		</ul>
-	</div>
+	</div> -->
 </div>
