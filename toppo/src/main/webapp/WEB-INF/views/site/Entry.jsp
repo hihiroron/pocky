@@ -25,73 +25,12 @@
 			</spring:bind>
 			<table>
 
-				<c:choose>
-					<c:when test="${meseage1 != null}">
-
-
-						<tr height="40px">
-							<td class="Item">ユーザーID</td>
-							<td class="Disp"><label><form:input path="userId" />
-									<!-- <spring:bind path="registForm.*"> --> <font color="red">
-										<span id="userId.errors"> <c:out value=" ${meseage1}" />
-									</span>
-								</font></label></td>
-							<!-- </spring:bind> -->
-						</tr>
-
-					</c:when>
-					<c:otherwise>
-
-						<tr height="40px">
-							<td class="Item">ユーザーID</td>
-							<td class="Disp"><label><form:input path="userId" />
-									<!-- <spring:bind path="registForm.*"> --> <font color="red">
-										<span id="userId.errors"> <form:errors path="userId" />
-									</span>
-								</font></label></td>
-							<!-- </spring:bind> -->
-						</tr>
-
-
-					</c:otherwise>
-				</c:choose>
-
-				<tr height="40px">
-					<td class="Item">パスワード</td>
-					<td class="Disp"><label><form:password path="password"
-								name="password" id="password" /> <font color="red"><span
-								id="password.errors"><form:errors path="password" /> </span></font> </label></td>
-				</tr>
-
 				<tr height="40px">
 					<td class="Item">名前</td>
 					<td class="Disp"><label><form:input path="userName" />
-
-
 							<font color="red"><span id="userName.errors"><form:errors
 										path="userName" /></span> </font> </label></td>
 
-				</tr>
-
-				<tr height="40px">
-					<td class="Item">郵便番号</td>
-					<td class="Disp"><label><form:input path="postCode" />
-
-
-
-							<font color="red"><span id="postCode.errors"><form:errors
-										path="postCode" /></span> </font> </label></td>
-
-				</tr>
-
-				<tr height="40px">
-					<td class="Item">住所</td>
-					<td class="Disp"><label><form:input path="address" />
-
-
-
-							<font color="red"><span id="address.errors"><form:errors
-										path="address" /></span> </font> </label></td>
 				</tr>
 
 				<tr height="40px">
@@ -102,32 +41,11 @@
 				</tr>
 
 				<tr height="40px">
-					<td>お仕事</td>
-					<td><form:select id="job" path="jobId" class="jobs"
-							items="${jobMap}" /></td>
+					<td class="Item">パスワード</td>
+					<td class="Disp"><label><form:password path="password"
+								name="password" id="password" /> <font color="red"><span
+								id="password.errors"><form:errors path="password" /> </span></font> </label></td>
 				</tr>
-
-				<c:choose>
-					<c:when test="${meseage2 != null}">
-
-						<tr height="40px">
-							<td class="Item">生年月日</td>
-							<td class="Disp"><label><form:input path="birth" />
-									<font color="red"><span id="birthday.errors"><c:out value=" ${meseage2}" /></span> </font> </label></td>
-						</tr>
-
-					</c:when>
-					<c:otherwise>
-
-						<tr height="40px">
-							<td class="Item">生年月日</td>
-							<td class="Disp"><label><form:input path="birth" />
-									<font color="red"><span id="birthday.errors"><form:errors
-												path="birth" /></span> </font> </label></td>
-						</tr>
-
-					</c:otherwise>
-				</c:choose>
 
 			</table>
 			<table>
