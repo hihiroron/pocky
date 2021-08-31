@@ -20,7 +20,7 @@ import com.cloud.toppo.Buisiness.Service.UserService;
 
 @Controller
 @RequestMapping(path = "/Entry")
-@SessionAttributes("entry")
+@SessionAttributes("userform")
 public class EntryController {
 
 	@Autowired
@@ -60,14 +60,14 @@ public class EntryController {
 	
 	//ユーザー登録画面で「登録」が押下された時の処理
 	@RequestMapping(path = "/Entry", method = RequestMethod.POST, params = "regist")
-	public String verify(@ModelAttribute("entry") @Valid UserModel form, Errors errors, Model model) {
+	public String verify(@ModelAttribute("userform") @Valid UserModel form, Errors errors, Model model) {
 		//エラーあった時の処理とか
 		return "site/Entry";
 	}
 	
 	//登録確認画面を表示
 	@RequestMapping(path = "EntryCheck", method = RequestMethod.GET)
-	public String showEntryCheck(@ModelAttribute("entry") UserModel form, Model model) {
+	public String showEntryCheck(@ModelAttribute("userform") UserModel form, Model model) {
 		
 		//EntryCheck.jspにリダイレクト
 		return "redirect:EntryCheck";
@@ -81,7 +81,7 @@ public class EntryController {
 	
 	//登録完了画面の表示
 	@RequestMapping(path = "/Entry", method = RequestMethod.GET)
-	public String showEntryComplete(@ModelAttribute("entry") UserModel form, Model model,SessionStatus sessionStatus) {
+	public String showEntryComplete(@ModelAttribute("userform") UserModel form, Model model,SessionStatus sessionStatus) {
 		
 		//データベースへの登録処理を行う」
 		userService.inserttUser(form);
