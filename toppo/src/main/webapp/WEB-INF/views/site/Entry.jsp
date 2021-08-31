@@ -24,7 +24,23 @@
 				</c:if>
 			</spring:bind>
 			<table>
+			
+				<tr height="40px">
+					<td class="Item">ユーザーID</td>
+					<td class="Disp"><label><form:input path="userId" />
+							<font color="red"><span id="userName.errors"><form:errors
+										path="userId" /></span> </font> </label></td>
 
+				</tr>
+				
+				<tr height="40px">
+					<td class="Item">frontBackId</td>
+					<td class="Disp"><label><form:input path="frontBackId" />
+							<font color="red"><span id="userName.errors"><form:errors
+										path="frontBackId" /></span> </font> </label></td>
+
+				</tr>
+				
 				<tr height="40px">
 					<td class="Item">名前</td>
 					<td class="Disp"><label><form:input path="userName" />
@@ -32,6 +48,7 @@
 										path="userName" /></span> </font> </label></td>
 
 				</tr>
+				
 
 				<tr height="40px">
 					<td class="Item">E-MAIL</td>
