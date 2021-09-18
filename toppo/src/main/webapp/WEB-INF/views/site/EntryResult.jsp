@@ -30,28 +30,28 @@
 
 						<tr>
 							<td>パスワード</td>
-							<td><c:out value="${secret}" /></td>
+							<td><c:out value="${userform.password}" /></td>
 						</tr>
 						<tr>
 							<td>名前</td>
 							<td><c:out value="${userform.userName}" /></td>
 						</tr>
 						<tr>
-							<td>住所</td>
-							<td><c:out value="${userform.address}" /></td>
+							<td>frontBackId</td>
+							<td><c:out value="${userform.frontBackId}" /></td>
 						</tr>
 						<tr>
 							<td>E-MAIL</td>
 							<td><c:out value="${userform.mail}" /></td>
 						</tr>
-						<tr>
+					<%-- 	<tr>
 							<td>お仕事</td>
 							<td><c:out value="${jobMap}" /></td>
 						</tr>
 						<tr>
 							<td>生年月日</td>
 							<td><c:out value="${userform.birth}" /></td>
-						</tr>
+						</tr> --%>
 					</tbody>
 				</table>
 				<p>

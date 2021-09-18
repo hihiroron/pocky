@@ -20,35 +20,53 @@
 							<td class="Item">ユーザーID</td>
 							<td class="Disp"><c:out value="${userform.userId}" />
 						</tr>
-
+						
 						<tr>
 							<td class="Item">パスワード</td>
-							<td class="Disp"><c:out value="${secret}" /></td>
+							<td class="Disp"><c:out value="${userform.password}" /></td>
 						</tr>
+
+						<%-- <tr>
+							<td class="Item">パスワード</td>
+							<td class="Disp"><c:out value="${secret}" /></td>
+						</tr> --%>
 						<tr>
 							<td class="Item">名前</td>
 							<td class="Disp"><c:out value="${userform.userName}" /></td>
 						</tr>
 						<tr>
-							<td class="Item">住所</td>
-							<td class="Disp"><c:out value="${userform.address}" /></td>
+							<td class="Item">frontBackId</td>
+							<td class="Disp"><c:out value="${userform.frontBackId}" /></td>
 						</tr>
 						<tr>
-							<td class="Item">メールアドレス</td>
+							<td class="Item">E-MAIL</td>
 							<td class="Disp"><c:out value="${userform.mail}" /></td>
 						</tr>
-						<tr class="EvenNumber">
+						<%-- <tr class="EvenNumber">
 							<td class="Item">お仕事</td>
 							<td class="Disp">
 								<!--        後で確認          --> <c:out value="${jobMap}" />
 							</td>
-						</tr>
-						<tr>
+						</tr> --%>
+						<%-- <tr>
 							<td class="Item">生年月日</td>
 							<td class="Disp"><c:out value="${userform.birth}" /></td>
-						</tr>
+						</tr> --%>
 					</tbody>
 				</table>
+				<table>
+							
+				
+
+
+				<tr height="40px">
+					<td class="Item">パスワード</td>
+					<td class="Disp"><label><form:password path="password"
+								name="password" id="password" /> <font color="red"><span
+								id="password.errors"><form:errors path="password" /> </span></font> </label></td>
+				</tr>
+
+			</table>
 			</div>
 
 			<table>
