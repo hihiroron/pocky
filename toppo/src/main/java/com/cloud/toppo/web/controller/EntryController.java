@@ -80,7 +80,7 @@ public class EntryController {
 	}
 	
 	//登録完了画面の表示
-	@RequestMapping(path = "/Entry", method = RequestMethod.GET)
+	@RequestMapping(path = "/EntryResult", method = RequestMethod.GET)
 	public String showEntryComplete(@ModelAttribute("userform") UserModel form, Model model,SessionStatus sessionStatus) {
 		
 		//データベースへの登録処理を行う」
