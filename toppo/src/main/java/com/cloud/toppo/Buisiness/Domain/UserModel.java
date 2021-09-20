@@ -16,6 +16,8 @@ public class UserModel implements Serializable{
 	@Size(max = 50, min = 1)
 	@Pattern(regexp = "^[a-zA-Z0-9]*")
 	private String userId; //ユーザーID
+	@NotNull
+	@Pattern(regexp = "^[1-2]*")
 	private String frontBackId; //表裏ID
 	@NotNull
 	@Size(max = 50, min = 1)

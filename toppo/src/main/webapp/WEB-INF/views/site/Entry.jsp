@@ -25,6 +25,14 @@
 			</spring:bind>
 			<table>
 			
+			<tr height="40px">
+					<td class="Item">アカウント選択</td>
+					<td class="Disp"><label><form:radiobutton path="frontBackId" items="${frontBackList}" />
+							<font color="red"><span id="userName.errors"><form:errors
+										path="frontBackId" /></span> </font> </label></td>
+					
+				</tr>
+			
 				<tr height="40px">
 					<td class="Item">ユーザーID</td>
 					<td class="Disp"><label><form:input path="userId" />
@@ -33,13 +41,6 @@
 
 				</tr>
 				
-				<tr height="40px">
-					<td class="Item">frontBackId</td>
-					<td class="Disp"><label><form:input path="frontBackId" />
-							<font color="red"><span id="userName.errors"><form:errors
-										path="frontBackId" /></span> </font> </label></td>
-
-				</tr>
 				
 				<tr height="40px">
 					<td class="Item">名前</td>
