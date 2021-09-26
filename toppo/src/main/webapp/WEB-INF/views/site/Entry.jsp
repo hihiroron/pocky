@@ -27,9 +27,10 @@
 			
 			<tr height="40px">
 					<td class="Item">アカウント選択</td>
-					<td class="Disp"><label><form:radiobutton path="frontBackId" items="${frontBackList}" />
+					<td class="Disp"><label><form:radiobuttons path="frontBackId" items="${frontBackList}" />
 							<font color="red"><span id="userName.errors"><form:errors
 										path="frontBackId" /></span> </font> </label></td>
+									
 					
 				</tr>
 			
@@ -74,9 +75,7 @@
 						name="reset" class="shop-btn" value="リセット"></td>
 				</tr>
 			</table>
-			<!-- 			</form> -->
-			<a href="/ShoppingSite/ProductList" class="nv_menu">一覧に戻る</a>
-
+		
 		</form:form>
 
 	</div>

@@ -29,7 +29,7 @@
 				</tr>
 				<tr height="40px">
 					<td>パスワード</td>
-					<td><input type="password" name="password" class="password" maxlength="50"/>
+					<td><input type="password" name="PASSWORD" class="password" maxlength="50"/>
 						<font color="red"> </font></td>
 				</tr>
 			</table>

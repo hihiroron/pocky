@@ -18,10 +18,10 @@
 		<form-login login-page="/Login"
 			default-target-url="/loginSuccess" authentication-failure-url="/Login"
 			login-processing-url="/j_spring_security_check"
-			username-parameter="USER_ID" password-parameter="password" />
+			username-parameter="USER_ID" password-parameter="PASSWORD" />
 
 		<!-- 認可URL設定 -->
-		<!-- <intercept-url pattern="/Pay" access="isAuthenticated()" /> -->
+		<intercept-url pattern="/Pocky" access="isAuthenticated()" />
 
 		<!-- ログアウト設定 -->
 		<logout logout-url="/Logout" logout-success-url="/Login"
@@ -43,14 +43,14 @@
 		<beans:property name="dataSource" ref="dataSource" />
 		<beans:property name="usersByUsernameQuery">
 			<beans:value>
-				SELECT USER_ID, PASSWORD, NAME
+				SELECT USER_ID, PASSWORD, USER_NAME
 				  FROM toppo.USER
 				 WHERE USER_ID=?
 			</beans:value>
 		</beans:property>
 		<beans:property name="authoritiesByUsernameQuery">
 			<beans:value>
-				SELECT USER_ID, NAME 
+				SELECT USER_ID, USER_NAME 
 				  FROM toppo.USER
 				 WHERE USER_ID=?
 			</beans:value>

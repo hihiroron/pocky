@@ -22,7 +22,7 @@ public class LoginController {
 
 		logger.info("ログイン画面にアクセス");
 
-		return "Login";
+		return "site/Login";
 	}
 
 	@RequestMapping(path = "/Logout")
@@ -30,7 +30,7 @@ public class LoginController {
 		// セッションの中身を削除
 		sessionStatus.setComplete();
 
-		return "Login";
+		return "site/Login";
 	}
 
 	/**
@@ -47,7 +47,7 @@ public class LoginController {
 	public String view() {
 
 		//top.jspにフォワード
-		return "site/LoginResult";
+		return "site/Home";
 	}
 
 	/**
