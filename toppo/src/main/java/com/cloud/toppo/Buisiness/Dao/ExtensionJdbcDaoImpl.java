@@ -24,7 +24,7 @@ public class ExtensionJdbcDaoImpl extends JdbcDaoImpl{
 						public UserDetails mapRow(ResultSet rs, int rowNum) throws SQLException {
 
 							return new ExtensionUser(rs.getString("USER_ID"), rs.getString("password"),
-									AuthorityUtils.NO_AUTHORITIES, rs.getString("name"));
+									AuthorityUtils.NO_AUTHORITIES, rs.getString("USER_NAME"));
 						}
 					});
 		}

@@ -1,5 +1,8 @@
 package com.cloud.toppo.web.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,7 +56,12 @@ public class EntryController {
 	// "/Entry"にGETリクエストを送信した際に実行されるメソッド
 	// ユーザー登録画面を表示する（Entry.jspの呼び出し）
 	@RequestMapping(path = "/Entry")
-	public String showEntryForm() {
+	public String showEntryForm(Model model) {
+		
+		List<String> frontBackList = new ArrayList<>();
+		frontBackList.add("1");
+		frontBackList.add("2");
+		model.addAttribute("frontBackList", frontBackList);
 		
 		return "site/Entry";
 	}
