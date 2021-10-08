@@ -59,8 +59,8 @@ public class EntryController {
 	public String showEntryForm(Model model) {
 		
 		List<String> frontBackList = new ArrayList<>();
-		frontBackList.add("1");
-		frontBackList.add("2");
+		frontBackList.add("表");
+		frontBackList.add("裏");
 		model.addAttribute("frontBackList", frontBackList);
 		
 		return "site/Entry";

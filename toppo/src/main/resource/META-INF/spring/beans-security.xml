@@ -13,7 +13,6 @@
 	<http>
 
 
-
 		<!-- 認証方式 -->
 		<form-login login-page="/Login"
 			default-target-url="/loginSuccess" authentication-failure-url="/Login"
@@ -21,7 +20,12 @@
 			username-parameter="USER_ID" password-parameter="PASSWORD" />
 
 		<!-- 認可URL設定 -->
-		<intercept-url pattern="/Pocky" access="isAuthenticated()" />
+		<intercept-url pattern="/Home" access="isAuthenticated()" />
+<!-- 		<intercept-url pattern="/Login" access="isAnonymous()" />
+ -->		<!-- "/Pocky"をインターセプトして -->
+		
+		<!-- ログイン状態の保持 -->
+		<remember-me key="loginKey"/>
 
 		<!-- ログアウト設定 -->
 		<logout logout-url="/Logout" logout-success-url="/Login"

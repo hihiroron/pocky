@@ -15,26 +15,30 @@
 	<%@ include file="/WEB-INF/views/common/cart_header.jsp"%>
 
 	<div align="center" class="body">
-		<h1>Doubbitへようこそ。</h1>
-		<form:form modelAttribute="product">
-			<div class="list-table">
-				<table border="1">
+		<div class="introduce">
+			<h1>Doubbitへようこそ。</h1>
+			<form:form modelAttribute="product">
+				<div class="list-table">
+					<table border="1">
 
-					<tr>
-						<th><img width="600"
-							src="/toppo/resources/images/S__55762983.jpg"></th>
-						<th>
-							<p class="login">
-								<a href="/toppo/Login">ログイン</a>
-							</p>
-							<p class="login">
-								<a href="/toppo/Entry/add">新規ユーザ登録</a>
-							</p>
-						</th>
-					</tr>
-				</table>
-			</div>
-		</form:form>
+						<tr>
+							<th><img width="600"
+								src="/toppo/resources/images/S__55762983.jpg"></th>
+							<th>
+								<div class="loginIntroduce">
+									<p class="loginIntr">
+										<a href="/toppo/Login">ログイン</a>
+									</p>
+									<p class="loginIntr">
+										<a href="/toppo/Entry/add">新規登録</a>
+									</p>
+								</div>
+							</th>
+						</tr>
+					</table>
+				</div>
+			</form:form>
+		</div>
 	</div>
 </body>
 </html>

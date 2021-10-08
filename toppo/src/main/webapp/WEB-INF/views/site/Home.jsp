@@ -12,20 +12,55 @@
 </head>
 <body>
 
-    <%@ include file="/WEB-INF/views/common/cart_header.jsp"%>
+	<%@ include file="/WEB-INF/views/common/cart_header.jsp"%>
 
 	<div align="center" class="body">
-		<h2>ホーム画面</h2>
 		<form:form modelAttribute="product">
-		<div class="list-table">
-		<table border="1">
-			<tr class="header">
-				<th align="center" width="200">呟き</th>
-				<th align="center" width="200">四郎を</th>
-				<th align="center" width="200">始めよう</th>
-			</tr>
-		</table>
-		</div>
+			<div>
+				<p>呟き</p>
+				<p>四郎を</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+				<p>フォーム</p>
+			</div>
 		</form:form>
 	</div>
 </body>

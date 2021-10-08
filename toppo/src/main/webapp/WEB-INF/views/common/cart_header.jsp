@@ -4,6 +4,10 @@
 
 
 <div class="sigt-content">
+	<p class="headerImg">
+		<a href="/toppo/Home"><img width="40" src="/toppo/resources/images/S__55762983.jpg"></a>
+	</p>
+
 	<sec:authorize var="a" access="isAuthenticated()" />
 	<c:choose>
 		<c:when test="${a}">
@@ -11,22 +15,23 @@
 			<p class="login">
 				<a href="/toppo/Logout">ログアウト</a>
 			</p>
-			<div class="aaa">
-				ようこそ
+			<!-- <div class="aaa">
 				<sec:authentication property="principal.name" />
-				さん
-			</div>
+			</div> -->
+			<p class="login">
+				<a href="/toppo/Logout">マイページ</a>
+			</p>
 		</c:when>
-	<c:otherwise>
-		<p class="login">
-			<a href="/toppo/Login">ログイン</a>
-		</p>
-		<p class="login">
-			<a href="/toppo/Entry/add">新規ユーザ登録</a>
-		</p>
-	</c:otherwise>
+		<c:otherwise>
+			<p class="login">
+				<a href="/toppo/Login">ログイン</a>
+			</p>
+			<p class="login">
+				<a href="/toppo/Entry/add">新規登録</a>
+			</p>
+		</c:otherwise>
 	</c:choose>
-	
+
 	<div class="clear-element"></div>
 	<!-- <div class="menu">
 		<ul class="nav">
