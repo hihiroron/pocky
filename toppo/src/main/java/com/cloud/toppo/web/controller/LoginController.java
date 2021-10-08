@@ -49,6 +49,12 @@ public class LoginController {
 		//top.jspにフォワード
 		return "site/Home";
 	}
+	
+	@RequestMapping(path = "/Home")
+	public String home() {
+		
+		return "redirect:main";
+	}
 
 	/**
 	 * 権限なし

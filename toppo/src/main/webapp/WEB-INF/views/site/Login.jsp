@@ -32,6 +32,10 @@
 					<td><input type="password" name="PASSWORD" class="password" maxlength="50"/>
 						<font color="red"> </font></td>
 				</tr>
+				<tr height="40px">
+					<td>ログイン状態を保持する </td>
+					<td><input type="checkbox" name="remember-me" id="remember-me" class="check" checked />
+				</tr>
 			</table>
 			<table>
 				<tr>

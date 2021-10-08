@@ -12,20 +12,24 @@
 </head>
 <body>
 
-    <%@ include file="/WEB-INF/views/common/cart_header.jsp"%>
+	<%@ include file="/WEB-INF/views/common/cart_header.jsp"%>
 
 	<div align="center" class="body">
 		<h2>マイページ</h2>
 		<form:form modelAttribute="product">
-		<div class="list-table">
-		<table border="1">
-			<tr class="header">
-				<th align="center" width="200">情報を</th>
-				<th align="center" width="200">編集</th>
-				<th align="center" width="200">してみよう。</th>
-			</tr>
-		</table>
-		</div>
+			<div class="list-table">
+				<sec:authorize var="a" access="isAuthenticated()" />
+				<p>
+					<sec:authentication property="principal.name" />
+				</p>
+				<table border="1">
+					<tr class="header">
+						<th align="center" width="200">情報を</th>
+						<th align="center" width="200">編集</th>
+						<th align="center" width="200">してみよう。</th>
+					</tr>
+				</table>
+			</div>
 		</form:form>
 	</div>
 </body>
