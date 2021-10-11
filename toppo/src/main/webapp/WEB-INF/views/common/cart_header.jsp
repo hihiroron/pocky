@@ -19,17 +19,9 @@
 				<sec:authentication property="principal.name" />
 			</div> -->
 			<p class="login">
-				<a href="/toppo/Logout">マイページ</a>
+				<a href="/toppo/MyPage">マイページ</a>
 			</p>
 		</c:when>
-		<c:otherwise>
-			<p class="login">
-				<a href="/toppo/Login">ログイン</a>
-			</p>
-			<p class="login">
-				<a href="/toppo/Entry/add">新規登録</a>
-			</p>
-		</c:otherwise>
 	</c:choose>
 
 	<div class="clear-element"></div>
