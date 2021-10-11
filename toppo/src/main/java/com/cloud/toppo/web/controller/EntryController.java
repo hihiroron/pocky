@@ -1,7 +1,7 @@
 package com.cloud.toppo.web.controller;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.validation.Valid;
 
@@ -58,10 +58,10 @@ public class EntryController {
 	@RequestMapping(path = "/Entry")
 	public String showEntryForm(Model model) {
 		
-		List<String> frontBackList = new ArrayList<>();
-		frontBackList.add("表");
-		frontBackList.add("裏");
-		model.addAttribute("frontBackList", frontBackList);
+		Map<Integer,String> frontBackMap = new HashMap<>();
+		frontBackMap.put(1,"表");
+		frontBackMap.put(2,"裏");
+		model.addAttribute("frontBackMap", frontBackMap);
 		
 		return "site/Entry";
 	}
