@@ -18,6 +18,23 @@ div.body {
 	background-color: #fff;
 }
 
+.homeForm{
+	display: flex;
+	border:1px solid ;
+	box-sizing: border-box;
+	border-color: rgb(239, 243, 244);
+}
+
+.homeContentBox{
+	margin: 17px 11px 11px 11px;
+	flex-direction: column;
+	text-align:left;
+}
+
+.homeContent{
+	text-align:left;
+}
+
 .body h1 {
 	color: #00a497;
 	font-weight: bold;

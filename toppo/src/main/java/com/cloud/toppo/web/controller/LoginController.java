@@ -40,9 +40,9 @@ public class LoginController {
 	@RequestMapping(path = "/loginSuccess")
 	public String login() {
 
-		return "redirect:main";
+		return "site/Home";
 	}
-
+	
 	@RequestMapping(path = "/Home")
 	public String view() {
 
