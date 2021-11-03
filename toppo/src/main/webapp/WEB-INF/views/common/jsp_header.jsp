@@ -52,7 +52,6 @@
 
 
 
-
 <link type="text/css"
 	href="<spring:url value="/resources/css/shopping.css"/>"
 	rel="stylesheet">
