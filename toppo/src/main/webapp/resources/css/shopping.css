@@ -1,7 +1,7 @@
 body {
 	color: #a9a9a9;
 	margin: auto;
-	background-color: #00a497;
+	background-color: #fff;
 	font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体",
 		"Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN",
 		"Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
@@ -13,26 +13,49 @@ div.body {
 	scrollbar-face-color: #C9BFED;
 	scrollbar-shadow-color: #EDEDED;
 	margin-top: 10px;
+	border: 10px #00a497;
+	border-style: hidden double;
 	width: 80%;
 	margin: auto;
 	background-color: #fff;
+	width: 80%;
 }
 
-.homeForm{
+.homeForm {
+	margin: 7px;
 	display: flex;
-	border:1px solid ;
+	border-style: solid;
+	border-width: 4px;
 	box-sizing: border-box;
 	border-color: rgb(239, 243, 244);
 }
 
-.homeContentBox{
+.homeContentBox {
 	margin: 17px 11px 11px 11px;
 	flex-direction: column;
-	text-align:left;
+	text-align: left;
 }
 
-.homeContent{
-	text-align:left;
+.homeUserZone {
+	display: flex;
+}
+
+.homeUserZone h4{
+	color:black;
+}
+
+.homeAcountName {
+	margin-top: 2px;
+	margin-left: 15px;
+}
+
+.homeDateTime {
+	margin-top: 2px;
+	margin-left: 15px;
+}
+
+.homeContent {
+	text-align: left;
 }
 
 .body h1 {
@@ -60,7 +83,10 @@ div.body {
 	width: 80%;
 	margin: auto;
 	background-color: #fff;
-	margin-bottom: 3px;
+	/* 	margin-bottom: 3px;
+ */
+	border: 10px #00a497;
+	border-style: hidden double;
 }
 
 .aaa {
@@ -91,6 +117,17 @@ p.headerImg {
 	margin-left: 2%;
 	margin-top: 11px;
 	margin-bottom: 11px;
+}
+
+p.img {
+	display: inline-block;
+	margin-left: 2%;
+	margin-top: 11px;
+	margin-bottom: 11px;
+}
+
+.img img {
+	border-radius: 50%;
 }
 
 .login a {
@@ -249,7 +286,6 @@ td {
 }
 
 div.cart {
-	/* border:1px solid gray; */
 	width: 320px;
 	height: 58px;
 }
