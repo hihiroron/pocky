@@ -4,11 +4,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
 @Controller
-@SessionAttributes("product")
 public class LoginController {
 
 	private final Logger logger = LoggerFactory.getLogger(getClass());
@@ -35,12 +33,12 @@ public class LoginController {
 
 	/**
 	   * ログイン成功
-	   * @return TOPへリダイレクト
+	   * @return Homeへリダイレクト
 	   */
 	@RequestMapping(path = "/loginSuccess")
 	public String login() {
 
-		return "site/Home";
+		return "redirect:Home";
 	}
 	
 	@RequestMapping(path = "/Home")
