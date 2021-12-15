@@ -12,7 +12,7 @@
 	<%@ include file="/WEB-INF/views/common/cart_header.jsp"%>
 	<!-- </div> -->
 	<div align="center" class="body">
-		<h2>ログイン画面</h2>
+		<h1>Login <img width="40" src="/toppo/resources/images/S__55762983.jpg"></h1>
 		<form name="f" action="j_spring_security_check" method="post">
 
 			<c:if test="${SPRING_SECURITY_LAST_EXCEPTION != null}">
