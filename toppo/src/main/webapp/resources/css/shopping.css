@@ -40,8 +40,8 @@ div.body {
 	display: flex;
 }
 
-.homeUserZone h4{
-	color:black;
+.homeUserZone h4 {
+	color: black;
 }
 
 .homeAcountName {
@@ -243,6 +243,7 @@ input.shop-btn:hover {
 	background: #00a497;
 	color: white;
 }
+
 
 .loginIntroduce p {
 	display: block;

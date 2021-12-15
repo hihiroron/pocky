@@ -12,10 +12,9 @@
 </head>
 <body>
 
-	<%@ include file="/WEB-INF/views/common/cart_header.jsp"%>
 
 	<div align="center" class="body">
-		<div class="introduce">
+		<div class="introduce" style="margin-top: 50px">
 			<h1>Doubbitへようこそ。</h1>
 			<form:form modelAttribute="product">
 				<div class="list-table">

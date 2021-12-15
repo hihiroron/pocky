@@ -13,7 +13,7 @@
 		<!-- セッションスコープの取得 -->
 		<%-- 		<form:form modelAttribute="userform" action="/ShoppingSite/userEntry" method="post"> --%>
 		<form:form modelAttribute="userform">
-			<h2>アカウントを作成</h2>
+			<h1>Entry <img width="40" src="/toppo/resources/images/S__55762983.jpg"></h1>
 			<spring:bind path="userform.*">
 				<c:if test="${status.errors.hasErrors()}">
 					<div class="ErrorMessage">
