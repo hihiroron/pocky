@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/views/common/jsp_header.jsp"%>
 
-
+<!-- おっぱい -->
 
 
 <!doctype html>
