@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.support.SessionStatus;
 
 @Controller
-@RequestMapping(path = "/MyPage")
+//@RequestMapping(path = "/MyPage")
 //@SessionAttributes("")
 public class MyPageController {
 
@@ -22,7 +22,7 @@ public class MyPageController {
 	}
 
 	// リダイレクト用メソッド
-	@RequestMapping(path = "/", method = RequestMethod.GET)
+	@RequestMapping(path = "/MyPage", method = RequestMethod.GET)
 	public String showMyPage(Model model, SessionStatus sessionStatus) {
 
 		// セッションの中身を削除
