@@ -7,6 +7,16 @@
 	<p class="headerImg">
 		<a href="/toppo/Home"><img width="40" src="/toppo/resources/images/S__55762983.jpg"></a>
 	</p>
+	
+	<p class="login">
+				<a href="/toppo/Logout">ログアウト</a>
+			</p>
+			<!-- <div class="aaa">
+				<sec:authentication property="principal.name" />
+			</div> -->
+			<p class="login">
+				<a href="/toppo/MyPage">マイページ</a>
+			</p>
 
 	<sec:authorize var="a" access="isAuthenticated()" />
 	<c:choose>
