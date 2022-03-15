@@ -20,8 +20,9 @@
 			username-parameter="USER_ID" password-parameter="PASSWORD" />
 
 		<!-- 認可URL設定 -->
-		<intercept-url pattern="/Home" access="isAuthenticated()" />
-<!-- 		<intercept-url pattern="/Login" access="isAnonymous()" />
+		<!-- 上の奴が設定してたやつ -->
+<!-- 		<intercept-url pattern="/Home" access="isAuthenticated()" />
+ --><!-- 		<intercept-url pattern="/Login" access="isAnonymous()" />
  -->		<!-- "/Pocky"をインターセプトして -->
 		
 		<!-- ログイン状態の保持 -->
